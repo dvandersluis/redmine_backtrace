@@ -1,0 +1,15 @@
+= Backtrace Plugin for Redmine
+
+== Description
+The Backtrace plugin is a plugin for Redmine[http://www.redmine.org] which allows users to include a backtrace as part of an issue. It also adds a Redmine role-based permission to determine if backtraces are visible.
+
+== Requirements
+* This plugin requires Redmine v0.8.x or 0.9.x.
+
+== Installation
+1. Make sure Redmine is installed as per the requirements listed above.
+2. Install the plugin to vendor/plugins/redmine_backtrace.
+3. Follow the Redmine plugin instructions[http://www.redmine.org/wiki/redmine/Plugins]. As this plugin uses migrations, ensure that +rake db:migrate_plugins+ is run as part of installation. 
+4. Login to your Redmine as an Administrator.
+5. Setup the Backtrace role permissions.
+6. Enable the plugin for the desired Redmine projects in the respective projects' Settings -> Modules page.
