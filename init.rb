@@ -9,9 +9,5 @@ Redmine::Plugin.register :redmine_backtrace do
 
   project_module :backtrace do |map|
     map.permission :view_backtrace, { }
-
-    project_module :new_issue_field_restrictions do |map|
-      map.permission :show_backtrace, { }
-    end
   end
 end
